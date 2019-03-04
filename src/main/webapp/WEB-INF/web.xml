@@ -20,7 +20,7 @@
 	</servlet>
 
 	<servlet-mapping>
-		<servlet-name>Dynamic Example Servlet</servlet-name>
+		<servlet-name>Jersey REST Service</servlet-name>
 		<url-pattern>/rest/*</url-pattern>
 	</servlet-mapping>
 </web-app> 
