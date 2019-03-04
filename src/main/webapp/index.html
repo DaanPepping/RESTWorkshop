@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html>
-<title>Dynamic Example</title>
+<title>Workshop</title>
 <body>
-	<form action="DynamicServlet.do" method="get">
+	<form action="restfull/personen" method="get">
 		<div>
-			<input type="text" name="username" /> <input type="submit"
-				value="Go!" />
+			<br>
+			<form name="form">
+				First name:<br> 
+				<input type="text" name="firstname"><br>
+				Last name:<br> 
+				<input type="text" name="lastname"><br>
+				Date of Birth:<br> 
+				<input type="text" name="dateofbirth"><br>
+			</form>
+			<input type="submit" value="Put" /> 
+			<input type="submit" value="Post" /> 
+			<input type="submit" value="Delete" />
 		</div>
 	</form>
 </body>
