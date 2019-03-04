@@ -6,12 +6,21 @@
 	version="3.1">
 
 	<servlet>
-		<servlet-name>Dynamic Example Servlet</servlet-name>
-		<servlet-class>rest2ws.rest2ws.PersoonRescourse</servlet-class>
+		<servlet-name>Jersey REST Service</servlet-name>
+		<servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
+		<init-param>
+			<param-name>jersey.config.server.provider.classnames</param-name>
+			<param-value>org.glassfish.jersey.server.filter.RolesAllowedDynamicFeature</param-value>
+		</init-param>
+		<init-param>
+			<param-name>jersey.config.server.provider.packages</param-name>
+			<param-value>restworkshop.restworkshop</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
 	</servlet>
 
 	<servlet-mapping>
 		<servlet-name>Dynamic Example Servlet</servlet-name>
-		<url-pattern>/restfull/*</url-pattern>
+		<url-pattern>/rest/*</url-pattern>
 	</servlet-mapping>
 </web-app> 

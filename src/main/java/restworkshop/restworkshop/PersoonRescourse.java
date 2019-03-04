@@ -1,6 +1,5 @@
 package restworkshop.restworkshop;
 
-import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.Map;
 

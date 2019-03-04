@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PersoonService {
-	private List<Persoon> personenlijst = new ArrayList<Persoon>();
+	private ArrayList<Persoon> personenlijst = new ArrayList<Persoon>();
 
 	public PersoonService() {
 		personenlijst.add(new Persoon("Chris", "Heuvel", 19));
